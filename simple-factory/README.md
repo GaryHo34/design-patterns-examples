@@ -6,10 +6,9 @@ A single factory usually handles the creation of objects from a single product f
 
 ## Example
 
-Let's take minecraft as an example, we can create an ax from different materials, such as woods, stones, and metals. The crafting table is a simple factory that can create different axls from different materials.
+Let's take minecraft as an example, we can create an axe from different materials, such as woods, stones, and metals. The crafting table is a simple factory that can create different axes from different materials.
 
 ```java
-
 public class CraftingFactory {
     
     public static Axe createAxe(Material material) {
