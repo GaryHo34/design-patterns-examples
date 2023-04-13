@@ -1,6 +1,6 @@
 from enum import Enum
 # python 3.8 and above
-from typing import Protocol
+from typing import Protocol, Dict
 
 class Material(Enum):
     WOOD = 1
@@ -29,14 +29,14 @@ class IronAxe(Axe):
 
 class CraftingFactory:
     def createAxe(self, material: Material):
-        if material == Material.WOOD:
-            return WoodAxe()
-        elif material == Material.STONE:
-            return StoneAxe()
-        elif material == Material.IRON:
-            return IronAxe()
-        else:
+        craftMap: Dict[Material, Axe] = {
+            Material.WOOD: WoodAxe,
+            Material.STONE: StoneAxe,
+            Material.IRON: IronAxe
+        }
+        if(material not in craftMap):
             raise Exception("Invalid material")
+        return craftMap[material]()
 
 def testCraftingFactory():
     factory = CraftingFactory()
