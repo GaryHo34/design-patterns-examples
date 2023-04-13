@@ -43,9 +43,9 @@ const testCraftingFactory = () => {
     const woodAxe = CraftingFactory.createAxe(Material.WOOD);
     const stoneAxe = CraftingFactory.createAxe(Material.STONE);
     const ironAxe = CraftingFactory.createAxe(Material.IRON);
-    console.log("WoodAxe is made of ",woodAxe.getMaterial());
-    console.log("StoneAxe is made of ",stoneAxe.getMaterial());
-    console.log("IronAxe is made of ",ironAxe.getMaterial());
+    console.log("WoodAxe is made of",woodAxe.getMaterial());
+    console.log("StoneAxe is made of",stoneAxe.getMaterial());
+    console.log("IronAxe is made of",ironAxe.getMaterial());
 }
 
 testCraftingFactory();
