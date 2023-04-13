@@ -1,16 +1,8 @@
-# Data Structures and Algotithms using Java
-Implement common data structures and algorithms using Java. Unit testing using JUnit.
+# Design paterns examples
+Try to implement design patterns in different languages, including: Java, python, C++, TypeScript. Including the details in Object Oriented Programming.
 
-## List of Data Structures
-- Stack
-- Queue
-- Binary Search Tree
-- Hash Table
-- AVL
-- Heap
-## List of Algorithms
-- Sorting
-  - Insertion Sort
-  - Merge Sort
-  - Quick Sort
-  - Heap Sort
+## Environment
+- Java 11
+- Python 3.8
+- C++ 17
+- TypeScript 4.0
