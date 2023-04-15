@@ -1,4 +1,6 @@
 import subprocess
+import glob
+import os
 
 print("####Test Java code####")
 subprocess.call(['javac', 'SimpleFactory.java'])
@@ -14,3 +16,9 @@ subprocess.call(['./SimpleFactory'])
 print("\n\n####Test TS code####")
 subprocess.call(['tsc', 'SimpleFactory.ts'])
 subprocess.call(['node', 'SimpleFactory.js'])
+
+os.remove('SimpleFactory')
+os.remove('SimpleFactory.js')
+for fl in glob.glob("*.class"):
+    #Do what you want with the file
+    os.remove(fl)
