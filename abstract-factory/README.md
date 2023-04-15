@@ -1,4 +1,4 @@
-# Factory Method
+# Abstract Factory Method
 
 Now, we defined the factory method pattern. However, if we want to create other tools, such as pickaxes or shovels, we need to create a new factory method for each tool. This is not ideal, because we want to hide the implementation details from the client. We can do this by using the abstract factory pattern.
 
