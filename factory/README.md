@@ -6,7 +6,7 @@ In the factory method, we abstract the creation of an object into a factory inte
 
 Simply put, the class will be an abstract class, CraftingFactory, and the subclasses will be the actual factories, such as WoodenAxeFactory, StoneAxeFactory, and IronAxeFactory.
 
-## Example
+## Example code
 
 ```java
 public abstract class AxeFactory {

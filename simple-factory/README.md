@@ -4,7 +4,7 @@ The simple factory pattern is a creational pattern that provides an interface fo
 
 A single factory usually handles the creation of objects from a single product family. It is called simple because it only creates objects, without having to specify the exact class of the object that will be created.
 
-## Example
+## Example code
 
 Let's take minecraft as an example, we can create an axe from different materials, such as woods, stones, and metals. The crafting table is a simple factory that can create different axes from different materials.
 
