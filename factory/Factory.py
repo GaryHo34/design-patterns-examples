@@ -1,6 +1,6 @@
 from enum import Enum
 # python 3.8 and above
-from typing import Protocol, Dict
+from typing import Protocol
 
 class Material(Enum):
     WOOD = 1
