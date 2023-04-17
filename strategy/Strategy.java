@@ -5,22 +5,6 @@ public class Strategy {
         public int calculate(int a, int b);
     }
 
-    private class AddOperator implements IOperatorStrategy {
-        @Override
-        public int calculate(int a, int b) {
-            System.out.println("The result of " + a + " + " + b + " =");
-            return a + b;
-        }
-    }
-
-    private class SubOperator implements IOperatorStrategy {
-        @Override
-        public int calculate(int a, int b) {
-            System.out.println("The result of " + a + " - " + b + " =");
-            return a - b;
-        }
-    }
-
     private class MulOperator implements IOperatorStrategy {
         @Override
         public int calculate(int a, int b) {
@@ -48,14 +32,6 @@ public class Strategy {
             SUB((int a, int b)->{
                 System.out.println("The result of " + a + " - " + b + " =");
                 return a - b;
-            }),
-            MUL((int a, int b)->{
-                System.out.println("The result of " + a + " * " + b + " =");
-                return a * b;
-            }),
-            DIV((int a, int b)->{
-                System.out.println("The result of " + a + " / " + b + " =");
-                return a / b;
             });
             
             private final IOperatorStrategy operator;
@@ -88,7 +64,7 @@ public class Strategy {
         Calculator calculator = new Calculator(LambdaStartegy.EnumOperatorStrategy.ADD);
         System.out.println(calculator.calculate(1, 2));
 
-        calculator = new Calculator(new SubOperator());
+        calculator = new Calculator(LambdaStartegy.EnumOperatorStrategy.SUB);
         System.out.println(calculator.calculate(1, 2));
 
         calculator = new Calculator(new MulOperator());
