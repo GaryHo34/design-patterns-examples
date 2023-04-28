@@ -3,9 +3,8 @@ import glob
 import os
 
 print("####Test Java code####")
-subprocess.run(['javac', 'Factory.java'])
-p1 = subprocess.Popen(['java', 'Factory'])
-p1.terminate()
+subprocess.call(['javac', 'Factory.java'])
+subprocess.call(['java', 'Factory'])
 
 print("\n\n####Test Python code####")
 subprocess.call(['python3', 'Factory.py'])
